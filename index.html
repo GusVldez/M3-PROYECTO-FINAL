@@ -7,21 +7,247 @@
     <meta name="description" content="Compra los mejores equipos electrónicos de computo.">
     <meta name="keywords" content="electrónicos, computadoras, venta, tecnología">
     <meta name="author" content="Guss Valdez">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
 </head>
 <body>
+    <nav class="navbar">
+        <div class="containerLOGO">
+            <a href="#"><img src="./HTLOGO-01.png" alt="" class="logo"></a>
+        </div>
+        <div class="search-container">
+            <select class="Menu-select">
+                <option value="">Todas Las categorias</option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+                <option value="servicios">Servicios</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Busca por producto o clave" id="buscar" name="b" autocomplete="off" value="">
+            <!-- <input type="text" class="search-input" placeholder="Buscar producto"> -->
+            <div class="boton-buscar">
+                <button class="button_fill">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+       
+        <div class="auth-links">
+            <!-- <span class="Hi-Registro"><a href="#register">Registrarse</a></span>
+            <span class="Hi-Inisesion"><a href="#Inisesion">Iniciar Sesión</a></span>  -->
+            <a href="#"><span class="Hi-Registro">Regístrate</span></a>
+            <a href="#"><span class="Hi-Inisesion">Iniciar sesión</span></a>
+        </div> -->
+        <div class="menuOBS">
+            <ul>
+                <li><a href="#hardware">HARDWARE</a></li>
+                <li><a href="#software">SOFTWARE</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr class="separador1">
     <header>
+        <div class="banner-container">
+            <div class="banner-slider">
+                <img src="./BannerImg/imagenDELL.JPG" alt="Imagen 1" class="responsive-image">
+                <img src="./BannerImg/imagenOTRA1.JPG" alt="Imagen 2" class="responsive-image">
+                <img src="./BannerImg/imagenOTRA2.JPG" alt="Imagen 3" class="responsive-image">
+                <img src="./BannerImg/imagenOTRA3.JPG" alt="Imagen 4" class="responsive-image">
+                <img src="./BannerImg/imagenOTRA4.JPG" alt="Imagen 5" class="responsive-image">
+                <img src="./BannerImg/imagenOTRA5.JPG" alt="Imagen 6" class="responsive-image">
+                <img src="./BannerImg/imagenOTRA6.JPG" alt="Imagen 7" class="responsive-image">
+                <img src="./BannerImg/imagenOTRA7.JPG" alt="Imagen 8" class="responsive-image">
+            </div>
+            <!-- <div class="banner-text">
+                <h1>Enterate</h1>
+                <p>Nuestros Provedores hablan</p>
+            </div> -->
+            <script src="script.js"></script>
+        </div>
+        <hr class="separador2">
+
+        <!---    poner un imagen para promever los equipos de computo-->
+        <div class="EquipoComputo">
+            <div class="Imagen-Equipo-Computo">
+                <img src="./BannerImg/equipocomputo.png" alt="Equipo de Computo" class="responsive-Equipocomputo">
+            </div>
+        </div>
+        <!---    contnedor equipo de computo termina -->
+        <hr class="separador3">
+
+        <div class="Caja-Container-Qvendo">
+            <div class="titulo-Qvendo">¡Promociones exclusivas por tiempo limitado!</div>
+            <div class="Container-Qvendo">
+               <li class="Preciosbajos">
+                    <div class="Imagen-Preciosbajos">
+                        <img src="./BannerImg/precios-bajos.png" alt="Precios Bajos" class="responsive-Precios-bajos">
+                    </div>
+                     <div class="text-Precios-bajos">Precios Bajos</div>
+                </li> 
+                <li class="Lomasnuevo">
+                    <div class="Imagen-Lomasnuevo">
+                        <img src="./BannerImg/lo-mas-nuevos.png" alt="Lo mas nuevo" class="responsive-LoMnuevo">
+                    </div>
+                    <div class="text-lomasnuevo">Lo más Nuevo</div>
+                </li>
+                <li class="Ultimaspiezas">
+                    <div class="Imagen-ultimaspiezas">
+                        <img src="./BannerImg/ultimas-piezas.png" alt="Ultimas Piezas" class="responsive-Ultpiezas">
+                    </div>
+                    <div class="text-ultimaspiezas">Últimas Piezas</div>
+                </li>
+                <li class="Lomasvendido">
+                    <div class="Imagen-lomasvendido">
+                        <img src="./BannerImg/ultimas-piezas.png" alt="Ultimas Piezas" class="responsive-loMvendido">
+                    </div>
+                    <div class="text-lomasvendido">Lo más Vendido</div>
+                </li>
+            </div>
+        </div>
+        
+        <hr class="separador4">
+        
+        <div class="Container-Lopopular">
+            <div class="titulo-popular">ESTO TE PUEDE INTERESAR</div>
+            <div class="Container-Interesar">
+                <li class="interes1-Laptos">
+                    <div class="Imagen-Laptops">
+                        <img src="./BannerImg/laptops.png" alt="interes1" class="responsive-Laptops">
+                    </div>
+                     <div class="text-Laptops">Laptops</div>
+                </li>
+                <li class="Interes2-Proyectores">
+                    <div class="Imagen-Proyectores">
+                        <img src="./BannerImg/proyectores.png" alt="Interes2" class="responsive-proyectores">
+                    </div>
+                    <div class="text-proyectores">Proyectores</div>
+                </li>
+                <li class="Interes3-Impresoras">
+                    <div class="Imagen-Impresoras">
+                        <img src="./BannerImg/impresoras.png" alt="Impresoras" class="responsive-Impresoras">
+                    </div>
+                    <div class="text-Impresoras">Impresoras</div>
+                </li>
+                <li class="Interes4-Monitores">
+                    <div class="Imagen-Monitores">
+                        <img src="./BannerImg/monitores.png" alt="Monitores" class="responsive-Monitores">
+                    </div>
+                    <div class="text-Monitores">Monitores</div>
+                </li>
+                <li class="Interes5-Tablets">
+                    <div class="Imagen-Tablets">
+                        <img src="./BannerImg/tablets.png" alt="tablets" class="responsive-Tablets">
+                    </div>
+                    <div class="text-Tablets">Tablets</div>
+                </li>
+            </div>
+        </div>
+
+        <hr class="separador5">
+        <!---    poner un imagen para promever todo para impresion-->
+        <div class="Todo-PImpresion">
+            <div class="Imagen-Todo-PImpresion">
+                <img src="./BannerImg/todo en impresion.png" alt="Todo para imprsion" class="responsive-Todo-PImpresion">
+            </div>
+        </div>
+        <!---    contnedor equipo de computo termina -->
+
+        <!-- <div class="Container-publicidad">
+            <div class="Public-Grid">nuestros productos</div>
+            <div class="Public-Grid">computadoras de escritorio</div>
+            <div class="Public-Grid">laptops</div>
+            <div class="Public-Grid">Impresoras</div>
+            <div class="Public-Grid">proyectores</div>
+            <div class="Public-Grid">perifericos</div>
+            <div class="Public-Grid">tablets</div>
+            <div class="Public-Grid">software</div>
+            <div class="Public-Grid">antivirus</div>
+            <div class="Public-Grid">ofertas</div>
+            <div class="Public-Grid">promosion especial</div>
+            <div class="Public-Grid">equipos de vigilancia</div>
+            <div class="Public-Grid">Celulares</div>
+            <div class="Public-Grid">Monitores</div>
+            <div class="Public-Grid">Televisores</div>
+            <div class="Public-Grid">No Breaks</div>
+            <div class="Public-Grid">DVR</div>
+            <div class="Public-Grid">Area de productos</div>
+            <div class="Public-Grid">servicios</div>
+            <div class="Public-Grid">Publicidad</div>
+        </div> -->
+    </header>
+    <hr class="separador6">
+    <!----------------------------------------------------------->
+    <!---------     empieza el foooter   ------------------------>
+    <!----------------------------------------------------------->
+    <footer class="Footer">
+        <div class="Container-footer">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4> Compañia</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Politica de Privacidad</a></li>
+                        <li><a href="#">Afiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envios</a></li>
+                        <li><a href="#">Status de orden</a></li>
+                        <li><a href="#">Pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tieda</h4>
+                    <ul>
+                        <li><a href="#">Computadoras a tu medida</a></li>
+                        <li><a href="#">Laptops nuevas y usadas</a></li>
+                        <li><a href="#">Telefonos y Tabletas</a></li>
+                        <li><a href="#">Pantallas para Gamers</a></li>
+                        <li><a href="#">Televisores</a></li>
+                        <li><a href="#">Proyectores-Impresoras-Perifericos</a></li>
+                        
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="Social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>  <!--- foooter-row-->
+        </div> <!-- Container-footer-->
+    </footer>
+
+    <hr class="separador7">
+
+    <div class="span">
+        <span class="spanfinal1">@ 2024. HI Tecnology. Reservados todos los derechos</span>
+        <br>
+        <span class="spanfinal2">mx | prod | 854568-45a234a3423238221214asddtrr  | 20/09/2024-05:22:33:753</span>
+    </div>
+    <!-- <header>
         <div class="container">
-            <h1>Tienda de Electrónicos HI*Future</h1>
+            <h1>Venta Tienda de Electrónicos HI*Future</h1>
             <nav>
                 <a href="#home">Inicio</a>
                 <a href="#productos">Productos</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
-    </header>
+    </header> -->
 
-    <div class="container main-content">
+    <!-- <div class="container main-content">
         <section id="home">
             <h2>Bienvenido a nuestra tienda</h2>
             <p>En nuestra tienda ofrecemos una amplia gama de equipos electrónicos de computo. Desde computadoras portátiles / Computadoras de Escritorio. Hasta accesorios y componentes. ¡Encuentra lo que necesitas con facilidad y confianza!</p>
@@ -64,10 +290,10 @@
                 <input type="submit" value="Enviar">
             </form>
         </section>
-    </div>
-
+    </div> -->
+<!-- 
     <footer>
         <p>&copy; 2024 Tienda de Electrónicos HIFuture. Todos los derechos reservados.</p>
-    </footer>
+    </footer> -->
 </body>
 </html>

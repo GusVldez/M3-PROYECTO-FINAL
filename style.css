@@ -1,0 +1,724 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px 10% 0 10%;
+    box-sizing: border-box;
+}
+
+.navbar {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+/* Solo logotipo */
+.containerLOGO img {
+    width: 260px; /* Ajusta el ancho del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+/* busqueda de productos soo presentacion */
+.search-container {
+    display: flex;
+    align-items:first baseline;
+   width: 50%; /* ste hace que el menu de busquedas quede largo 60% de su ancho */
+  
+}
+/* seleccion de categorias */
+.Menu-select {
+    
+    margin-right: 10px; /*le da acomodo y tamaño al meno de busqueda */
+    padding: 18px; /* de da estacion para lograr tamaño */
+    box-shadow: inset 0 4px 15px rgba(0,0,0,.3);
+    border: 3px solid #4b5764 ;
+}
+
+.search-input {
+    height: 30px;
+    padding: 10px;
+    width: 70%;
+    box-shadow: inset 0 4px 15px rgba(0,0,0,.3);
+    border: px solid #4b5764 ;
+
+} 
+
+.button_fill {
+    margin: 4px;
+    width: 52px;
+    height: 1.6vw;
+    color: #fff;
+    font-size: 22px;
+    background: #1f5790 ;
+}
+
+.auth-links a {
+    text-decoration: none;
+}
+
+.Hi-Registro {
+    margin-right: 50px;
+    color: #2f3e89;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500px;
+    background-color: transparent;
+}
+
+.Hi-Inisesion{
+    margin-right: auto;
+    color: #2f3e89;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500px;
+    background-color: transparent;
+} 
+
+
+.auth-links a:hover {
+    text-decoration: underline;
+} 
+
+
+.menuOBS ul {
+    list-style-type: none;
+    float: left;
+}
+
+.menuOBS ul li {
+    display: inline-block;
+    line-height: 20px;
+    margin: 0 10px;
+}
+
+
+.menuOBS a {
+    color:#4b5764;
+    font-size: 25px;
+    padding: 10px 13px;
+    border-radius: 3px;
+}
+
+.menuOBS li a:active, li a:hover {
+    background: #1f5790;
+    color: aliceblue;
+    transition: .5s;
+}
+/*******************************************************************/
+/* empieza configuracion de separados de publicidad y header y nav */
+/*******************************************************************/
+
+.separador1 {
+    border: 0;
+    height: 3px; /* Altura de la línea */
+    background: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+/*** despliegue del baner configurado */ 
+
+.banner-container {    
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Oculta imágenes fuera del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+   
+}
+
+
+.banner-slider {
+    display: flex;
+    transition: transform 0.5s ease; /* Efecto de transición */
+}
+
+.banner-slider img {
+    width: 100%; /* Las imágenes llenan el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    /*object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+    flex-shrink: 0; /* Evita que las imágenes se compriman */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.Container-publicidad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 columnas */
+    grid-template-rows: repeat(5, 520px); /* 5 renglones de 100px de altura */
+    gap: 10px; /* Espacio entre las celdas */
+    padding: 10px; /* Espacio alrededor del grid */
+}
+
+
+.separador2 {
+    border: 0;
+    height: 3px; /* Altura de la línea */
+    background: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------/
+/****** inicia la publicidad sobre equipo de computo simula un acceso a un catalogo futuro con un click        */
+/*-------------------------------------------------------------------------------------------------------------/*/
+
+
+.EquipoComputo {    
+    position: relative;
+    width: 100%;
+    height: auto;
+   
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+   
+}
+
+
+.Imagen-Equipo-Computo img {
+    width: 100%; /* Las imágenes llenan el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    /*object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+    flex-shrink: 0; /* Evita que las imágenes se compriman */
+}
+
+.separador3 {
+    border: 0;
+    height: 3px; /* Altura de la línea */
+    background: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+/*-------------------------------------------------------------------------------------------------------------/
+/****** inicia otra promosiones contenedor con algunos hover para simular en este caso un acceso a cada rubro */
+/*-------------------------------------------------------------------------------------------------------------/*/
+
+
+.Caja-Container-Qvendo {
+    padding-top: 40px;
+    background-color: #eee;
+    margin-bottom: 10px;
+    position: relative;
+    border: 1px solid #c3c6ca ;
+    box-sizing: border-box; 
+    width: auto;
+    height: auto;
+
+}
+
+.Container-Qvendo {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: auto;
+    border:5px solid #283891;
+    /* color: #666;
+    /* unicode-bidi: isolate; 
+    width: 100%;
+    height: 8vw; */
+    background-color: #fff; 
+}
+
+.titulo-Qvendo {
+    
+    min-height: 1px;
+    background-color: #283891;
+    color:#fff;
+    margin-top: -40px;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 9px;
+    text-align: center;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.31); 
+    z-index: 10;
+    
+} 
+
+/*  precios bajos  */
+
+
+.Preciosbajos  {
+    width:230px;
+    height: 6vw;
+    display:flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Preciosbajos {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.text-Precios-bajos {
+    color: #ec2028;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+    
+}
+
+/******* lo mas nuevo   */
+
+.Lomasnuevo  {
+    width:230px;
+    height: 6vw;
+    display:flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Lomasnuevo {
+    display: block;
+    unicode-bidi: isolate;
+
+}
+
+.text-lomasnuevo {
+    color: #ec2028;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+}
+
+/*****    ultimas piezas  */
+
+.Ultimaspiezas  {
+    width:230px;
+    height: 6vw;
+    display:flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Ultimaspiezas  {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.text-ultimaspiezas  {
+    color: #ec2028;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+}
+
+/***** lo mas vendido******** */
+
+.Lomasvendido  {
+    width:230px;
+    height: 6vw;
+    display:flex;
+    /* justify-content: space-around;*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Lomasvendido   {
+    display: block;
+    unicode-bidi: isolate;
+
+}
+
+.text-lomasvendido   {
+    color: #ec2028;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+} */
+
+
+.separador4 {
+    border: 0;
+    height: 3px; /* Altura de la línea */
+    background: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+/*-------------------------------------------------------------------------------------------------------------/
+/****** inicia otra promosiones contenedor con algunos hover para simular en este caso un acceso a cada rubro */
+/*-------------------------------------------------------------------------------------------------------------/*/
+
+.Container-Lopopular {
+    padding-top: 40px;
+    background-color: #b8c4f6;
+    margin-bottom: 10px;
+    position: relative;
+    border: 1px solid #c3c6ca ;
+    border-radius: 2%;
+    /* box-sizing: border-box; */
+}
+
+
+.Container-Interesar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: #666;
+    font-family: Ubuntu;
+  
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right:auto;
+    margin-left: auto; 
+   
+    padding: 40px;
+    background-color:#e6e6e6; 
+}
+
+.titulo-popular {
+    
+    min-height: 1px;
+    /* background-color: #ec2028; */
+    font-weight: bold;
+    font-size: 50px;
+    color:black;
+    /* box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.31); */
+} 
+
+/*  precios laptops */
+
+
+.interes1-Laptos  {
+   
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Laptops {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.text-Laptops {
+   
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+    
+}
+
+
+/*  PROYECTORES */
+
+
+.Interes2-Proyectores {
+   
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Proyectores {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.text-proyectores {
+   
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+    
+}
+
+
+/*  impresoras */
+
+
+.Interes3-Impresoras{
+   
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Impresoras {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.text-Impresoras {
+   
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+    
+}
+
+
+/*  MONITORES */
+
+
+.Interes4-Monitores{
+   
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Monitores {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.text-Monitores {
+   
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+    
+}
+
+
+/*  TABLETAS*/
+
+
+.Interes5-Tablets {
+   
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Imagen-Tablets {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.text-Tablets {
+   
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    unicode-bidi: isolate;
+    cursor: pointer;
+    
+}
+
+
+.separador5 {
+    border: 0;
+    height: 3px; /* Altura de la línea */
+    background: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+/*-------------------------------------------------------------------------------------------------------------/
+/****** inicia la publicidad sobre equipo de computo simula un acceso a un catalogo futuro con un click        */
+/*-------------------------------------------------------------------------------------------------------------/*/
+
+
+.Todo-PImpresion {    
+    position: relative;
+    width: 100%;
+    height: auto;
+   
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+   
+}
+
+
+.Imagen-Todo-PImpresion img {
+    width: 100%; /* Las imágenes llenan el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    /*object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+    flex-shrink: 0; /* Evita que las imágenes se compriman */
+}
+
+
+.Public-Grid {
+    background-color: #283891; /* Color de fondo */
+    color: white; /* Color del texto */
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 20px; /* Tamaño de la fuente */
+}
+
+/****** ******************************************************************************/
+/**          foooter para mi pagina de modulo 3                                      */
+/*************************************************************************************/
+
+.separador6 {
+    border: 0;
+    height: 3px; /* Altura de la línea */
+    background: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+
+.Contanier-footer {    
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer {
+    background: #08080c;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 22%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 45px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff; 
+    padding-bottom: 10px;
+    display:inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 28px;
+    text-decoration: none;
+    color:#283891;
+    display:  block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color:#19087a;
+    padding-left:6px;
+    
+}
+
+.Social-links a {
+    display: inline-block;
+    min-height: 50px;
+    width: 50px;
+    background-color: #33267c;
+    text-align: center;    
+    line-height: 50px;
+    border-radius: 50%;
+    color: rgb(236, 235, 241);
+    transition: all .5s ease;
+}
+
+.Social-links a:hover {
+    background-color: #6b99a7;
+}
+
+
+.separador7 {
+    border: 0;
+    height: 3px; /* Altura de la línea */
+    background: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+
+.span {
+    padding-top: 10px;
+    text-align: center;
+    color: #596f7e; /* Color del texto */
+    font-size: 35px; /* Tamaño de la letra */
+    margin: 0 10px; /* Espacio entre enlaces */
+}
+span {
+    display: inline-block;
+    text-align: center;
+    color: #596f7e; /* Color del texto */
+    font-size: 35px; /* Tamaño de la letra */
+    margin: 0 10px; /* Espacio entre enlaces */
+}
+
+@media(max-width:991px) {
+    .footer-row {
+        text-align: center;
+    }
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .Container-Qvendo {
+   
+        box-sizing: border-box;
+        display: flexbox;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    } 
+} 
+
